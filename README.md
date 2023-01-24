@@ -1,2 +1,2 @@
 # Currency Converter
-A Laravel wrapper around OpenExchange Rate API
+A Laravel wrapper around Exchange rates API
