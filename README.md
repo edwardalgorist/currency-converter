@@ -59,3 +59,23 @@ You can retrieve exchange rate fluctuation data for a given date range by callin
 ```php
 $fluctuation = $converter->fluctuation("2022-01-01", "2022-01-31");
 ```
+
+## Exception Handling
+
+The package throws several exceptions in the event of an error. These include:
+
+- `NotFoundExceptionInterface`: thrown when a requested resource cannot be found.
+- `ContainerExceptionInterface`: thrown when an error occurs in the container.
+- `GuzzleException`: thrown when an error occurs while making an API request.
+
+It is recommended to wrap your code in a try-catch block to handle any exceptions that may be thrown.
+
+## Additional Features
+
+- The package supports caching of API responses for faster performance.
+- It also supports additional query parameters to be passed to the API.
+- The package uses GuzzleHttp to make API requests, which means it has support for all features provided by Guzzle.
+
+## Conclusion
+
+The CurrencyConverter package makes it easy to convert currencies using the exchangerate.host API. It has a simple and easy-to-use interface, and supports caching of API responses for faster performance. The package is well documented and easy to use, making it a great choice for any project that needs to convert currencies.
