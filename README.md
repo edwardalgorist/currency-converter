@@ -60,6 +60,20 @@ You can retrieve exchange rate fluctuation data for a given date range by callin
 $fluctuation = $converter->fluctuation("2022-01-01", "2022-01-31");
 ```
 
+## Retrieving Currency Symbols
+You can retrieve a list of all available currency symbols by calling the `symbols()` method on your `CurrencyConverter` instance.
+
+```php
+$symbols = $converter->symbols();
+```
+
+## Retrieving VAT Rates
+You can retrieve a list of VAT (Value Added Tax) rates for different countries by calling the `vatRates()` method on your `CurrencyConverter` instance.
+
+```php
+$vatRates = $converter->vatRates();
+```
+
 ## Exception Handling
 
 The package throws several exceptions in the event of an error. These include:
