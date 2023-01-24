@@ -93,3 +93,9 @@ It is recommended to wrap your code in a try-catch block to handle any exception
 ## Conclusion
 
 The CurrencyConverter package makes it easy to convert currencies using the exchangerate.host API. It has a simple and easy-to-use interface, and supports caching of API responses for faster performance. The package is well documented and easy to use, making it a great choice for any project that needs to convert currencies.
+
+Contributing
+Thank you for considering contributing to CurrencyConverter package! We welcome any contributions, bug reports, suggestions, and feedback.
+
+License
+The CurrencyConverter package is open-sourced software licensed under the [MIT](https://github.com/edwardalgorist/currency-converter/blob/master/LICENSE.md) license.
