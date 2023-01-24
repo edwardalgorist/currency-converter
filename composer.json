@@ -1,0 +1,42 @@
+{
+    "name": "edwardalgorist/currency-converter",
+    "version": "1.0.0",
+    "description": "A Laravel wrapper around Exchange rates API",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "package", "currency", "converter", "currency converter", "api"],
+    "autoload": {
+        "psr-4": {
+            "EdwardAlgorist\\CurrencyConverter\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.5",
+        "illuminate/support": "^9.48"
+    },
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "Edward Nyirenda Jr.",
+            "email": "edwardnyirendajr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EdwardAlgorist\\CurrencyConverter\\Providers\\CurrencyConverterServiceProvider"
+            ],
+            "aliases": {
+                "CurrencyConverter" : "EdwardAlgorist\\CurrencyConverter\\CurrencyConverter"
+            }
+        }
+    }
+}
